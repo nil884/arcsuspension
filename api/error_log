@@ -1,0 +1,16 @@
+[02-Apr-2021 11:46:58 Asia/Kolkata] PHP Warning:  array_map(): Expected parameter 2 to be an array, null given in /home/myarc/public_html/arcsuspension.in/DigitalOceanAPI/src/Api/DomainRecord.php on line 39
+[02-Apr-2021 11:51:55 Asia/Kolkata] PHP Warning:  array_map(): Expected parameter 2 to be an array, null given in /home/myarc/public_html/arcsuspension.in/DigitalOceanAPI/src/Api/DomainRecord.php on line 39
+[13-May-2021 12:49:09 Asia/Kolkata] PHP Fatal error:  Uncaught Buzz\Exception\RequestException: Operation timed out after 5000 milliseconds with 0 bytes received in /home/myarc/public_html/DigitalOceanAPI/vendor/kriswallsmith/buzz/lib/Buzz/Client/Curl.php:54
+Stack trace:
+#0 /home/myarc/public_html/DigitalOceanAPI/vendor/kriswallsmith/buzz/lib/Buzz/Browser.php(226): Buzz\Client\Curl->sendRequest(Object(GuzzleHttp\Psr7\Request))
+#1 /home/myarc/public_html/DigitalOceanAPI/vendor/kriswallsmith/buzz/lib/Buzz/Browser.php(263): Buzz\Browser->Buzz\{closure}(Object(GuzzleHttp\Psr7\Request), Object(Closure))
+#2 /home/myarc/public_html/DigitalOceanAPI/src/Adapter/BuzzOAuthMiddleware.php(39): Buzz\Browser->Buzz\{closure}(Object(GuzzleHttp\Psr7\Request))
+#3 /home/myarc/public_html/DigitalOceanAPI/vendor/kriswallsmith/buzz/lib/Buzz/Browser.php(273): DigitalOceanV2\Adapter\BuzzOAuthMiddleware->handleRequest(Object(GuzzleHttp\Psr7\Request), Object(Closure))
+#4 /home/myarc/public_html/DigitalOceanAPI/vendor/kriswallsmith/buzz/lib/Buzz/Browser.php(235): Buzz\Browser->Buzz\{closur in /home/myarc/public_html/DigitalOceanAPI/vendor/kriswallsmith/buzz/lib/Buzz/Client/Curl.php on line 54
+[13-May-2021 12:49:20 Asia/Kolkata] PHP Fatal error:  Uncaught Buzz\Exception\RequestException: Operation timed out after 5000 milliseconds with 0 bytes received in /home/myarc/public_html/DigitalOceanAPI/vendor/kriswallsmith/buzz/lib/Buzz/Client/Curl.php:54
+Stack trace:
+#0 /home/myarc/public_html/DigitalOceanAPI/vendor/kriswallsmith/buzz/lib/Buzz/Browser.php(226): Buzz\Client\Curl->sendRequest(Object(GuzzleHttp\Psr7\Request))
+#1 /home/myarc/public_html/DigitalOceanAPI/vendor/kriswallsmith/buzz/lib/Buzz/Browser.php(263): Buzz\Browser->Buzz\{closure}(Object(GuzzleHttp\Psr7\Request), Object(Closure))
+#2 /home/myarc/public_html/DigitalOceanAPI/src/Adapter/BuzzOAuthMiddleware.php(39): Buzz\Browser->Buzz\{closure}(Object(GuzzleHttp\Psr7\Request))
+#3 /home/myarc/public_html/DigitalOceanAPI/vendor/kriswallsmith/buzz/lib/Buzz/Browser.php(273): DigitalOceanV2\Adapter\BuzzOAuthMiddleware->handleRequest(Object(GuzzleHttp\Psr7\Request), Object(Closure))
+#4 /home/myarc/public_html/DigitalOceanAPI/vendor/kriswallsmith/buzz/lib/Buzz/Browser.php(235): Buzz\Browser->Buzz\{closur in /home/myarc/public_html/DigitalOceanAPI/vendor/kriswallsmith/buzz/lib/Buzz/Client/Curl.php on line 54
