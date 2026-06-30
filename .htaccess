@@ -136,14 +136,14 @@ Options +FollowSymLinks -MultiViews
    php_flag log_errors On
    php_flag display_errors On
    php_value error_reporting E_ALL
-   php_value error_log "/home/newmysurun/public_html/arcsuspension.in/error.log"
+   php_value error_log "/home/myarc/public_html/arcsuspension.in/error.log"
 </IfModule>
 
 <IfModule lsapi_module>
    php_flag log_errors On
    php_flag display_errors On
    php_value error_reporting E_ALL
-   php_value error_log "/home/newmysurun/public_html/arcsuspension.in/error.log"
+   php_value error_log "/home/myarc/public_html/arcsuspension.in/error.log"
 </IfModule>
 # END cPanel-generated php ini directives
 
