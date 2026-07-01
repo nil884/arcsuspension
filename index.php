@@ -63,7 +63,10 @@ if(count($parent)){ ?>
                     for($p=0;$p<count($parent);$p++){
                     $parenttype = $parent[$p]['type']; $parentid=$parent[$p]['id'];
                     $checksub = selectQuery(PRODCAT,"count(id) as sub","type='Master' AND isActive='1' AND parent_id=".$parentid." AND img_name<>''");
-                    if($checksub[0]['sub']){ $urlsrc=SITEURL."/m/".getUrl($parenttype,$parentid); }
+                    if($checksub[0]['sub']){ 
+                      //  $urlsrc=SITEURL."/m/".getUrl($parenttype,$parentid); 
+                        $urlsrc=SITEURL."/".getUrl($parenttype,$parentid);
+                    }
                     else{$urlsrc=SITEURL.'/'.getUrl("Parent",$parentid);} ?>
                     <div class="item col-4 col-sm-4 col-md-4 col-lg-12 pr-0 px-lg-0 mb-3 mb-lg-0 text-center"><a href="<?=$urlsrc;?>" hreflang="en"><div class="categ-item position-relative shop-by-cat d-flex flex-wrap align-content-center card rounded-top p-2 p-md-3"><img src="<?=SITEURL.'/'.$catpath[0]['imgs_location'].'/'.$parent[$p]['img_name']; ?>" alt="<?php echo $parent[$p]['cat_name'] ?>" class="mw-100 m-auto rounded"></div>
                         <div class="h6 category-head text-center mb-0 rounded-bottom d-flex flex-wrap align-content-center justify-content-center cc-primary-back"><div class="my-1"><?php echo $parent[$p]['cat_name'] ?></div></div></a></div>
