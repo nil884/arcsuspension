@@ -7,8 +7,11 @@ $currentfile = $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 $repath = $_SERVER['HTTP_HOST']."/".$files;
 require_once getRelativePath($currentfile, $repath);
 $surun = new surun(); 
-$featurelog = $surun->getNewFeature(SITEURL); 
-$changelog = $surun->getNewChange(SITEURL);
+// for temp we comment this
+//$featurelog = $surun->getNewFeature(SITEURL); 
+//$changelog = $surun->getNewChange(SITEURL);
+$featurelog = '';
+$changelog = '';
 $filesp = "classes/product.php";
 $repathp = $_SERVER['HTTP_HOST']."/".$filesp;
 require_once getRelativePath($currentfile, $repathp);
